@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Imaging data
+*.dcm
+*.nii
+*.nii.gz
+*.mha
+*.mhd
+
+# Large archives
+*.zip
+*.tar
+*.gz
+
+# Environment
+.env
+
+# Outputs
+results/
+build/
