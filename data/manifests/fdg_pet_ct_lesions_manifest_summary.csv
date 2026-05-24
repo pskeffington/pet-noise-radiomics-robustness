@@ -1,0 +1,22 @@
+field,value
+uploaded_file,GC_manifest_FDG-PET-CT-Lesions_20260326.csv
+study_name,A whole-body FDG-PET/CT dataset with manually annotated tumor lesions
+accession,phs004225
+row_count,3042
+participant_count,900
+file_type,DICOM
+study_data_type,"Image Annotation,Imaging"
+ct_file_count,1014
+pt_file_count,1014
+seg_file_count,1014
+participants_with_ct_pt_seg,900
+total_size_gb,166.557
+ct_size_gb,139.926
+pt_size_gb,26.603
+seg_size_gb,0.028
+file_id_duplicates,0
+file_name_duplicates,0
+rows_per_participant_min,3
+rows_per_participant_median,3
+rows_per_participant_max,15
+summary_decision,"Manifest supports candidate feasibility and confirms CT/PT/SEG records; official source-page citation and access terms still pending."
