@@ -6,7 +6,7 @@ This registry separates dataset-source citations from methodological literature.
 
 ## Status labels
 
-- `verified`: confirmed against DOI, publisher, PubMed, TCIA, or official challenge source.
+- `verified`: confirmed against DOI, publisher, PubMed, TCIA, official challenge source, or supplied publisher-formatted source document.
 - `methods-planning-ready`: enough metadata exists for methods planning, but direct publisher, DOI-registry, or PubMed capture remains required before submission.
 - `partially-verified`: key bibliographic metadata found, but at least one preferred source such as publisher page or PubMed remains unreached in the current validation pass.
 - `source-page-pending`: official source page must be checked before use.
@@ -32,7 +32,7 @@ This registry separates dataset-source citations from methodological literature.
 | `meth_icc` | Intraclass correlation coefficient | doi-pending | Select appropriate statistical reference and verify metadata. | Hold |
 | `meth_bland_altman` | Bland-Altman agreement analysis | doi-pending | Verify original or appropriate methodological reference. | Hold |
 | `meth_low_count_pet_noise` | Low-count PET noise simulation or denoising | doi-pending | Identify source directly supporting count reduction/noise assumptions. | Hold |
-| `meth_pet_radiomics_robustness` | PET radiomics repeatability and robustness | doi-pending | Priority lead: Leijenaar et al. 2013, Acta Oncologica, on FDG-PET radiomics feature stability. Verify DOI, publisher page, and PubMed before promotion. | Hold |
+| `meth_pet_radiomics_robustness` | PET radiomics repeatability and robustness | verified | Leijenaar et al. 2013, Acta Oncologica, 52(7), 1391-1397, DOI 10.3109/0284186X.2013.812798. Verified from supplied publisher-formatted article PDF. | Manuscript-ready for PET robustness background and methods justification |
 
 ## Method citation notes
 
@@ -62,13 +62,24 @@ PyRadiomics is a candidate open-source feature-extraction tool for this project.
 
 ### `meth_pet_radiomics_robustness`
 
-Priority candidate pending verification:
+Verified APA 7 citation:
 
-Leijenaar, R. T. H., Carvalho, S., Velazquez, E. R., van Elmpt, W. J. C., Parmar, C., Hoekstra, O. S., Hoekstra, C. J., Boellaard, R., Dekker, A. L. A. J., Gillies, R. J., Aerts, H. J. W. L., & Lambin, P. (2013). Stability of FDG-PET radiomics features: An integrated analysis of test-retest and inter-observer variability. *Acta Oncologica, 52*(7), 1391-1397.
+Leijenaar, R. T. H., Carvalho, S., Velazquez, E. R., van Elmpt, W. J. C., Parmar, C., Hoekstra, O. S., Hoekstra, C. J., Boellaard, R., Dekker, A. L. A. J., Gillies, R. J., Aerts, H. J. W. L., & Lambin, P. (2013). Stability of FDG-PET radiomics features: An integrated analysis of test-retest and inter-observer variability. *Acta Oncologica, 52*(7), 1391-1397. https://doi.org/10.3109/0284186X.2013.812798
 
-Supported planning claim:
+Verification basis:
 
-This is the highest-priority PET-specific robustness lead because it directly addresses FDG-PET radiomic feature stability, test-retest variation, and inter-observer variation.
+Supplied publisher-formatted article PDF lists the journal, article title, authors, volume, issue, pages, publication date, DOI, and DOI link.
+
+Supported manuscript claims:
+
+- FDG-PET radiomics robustness requires explicit stability evaluation.
+- Test-retest and inter-observer variability are appropriate stability domains for PET radiomics feature assessment.
+- ICC and COV can be used to evaluate PET radiomics feature stability.
+- Feature stability varies by feature class; GLSZM-derived texture features were among the least stable textural features in this study.
+
+Use limitations:
+
+This source supports FDG-PET radiomics stability framing in NSCLC. It does not validate this repository's dataset access, segmentation masks, PyRadiomics implementation, or noise perturbation model.
 
 ## Claim-control rule
 
@@ -81,8 +92,7 @@ No manuscript section should cite a row labeled `UNVERIFIED — POSSIBLE SIMULAT
 ## Immediate verification order
 
 1. `meth_pyradiomics`
-2. `meth_pet_radiomics_robustness`
-3. `meth_ibsi`
-4. `src_fdg_pet_ct_lesions`
-5. `meth_low_count_pet_noise`
-6. `src_autopet`
+2. `meth_ibsi`
+3. `src_fdg_pet_ct_lesions`
+4. `meth_low_count_pet_noise`
+5. `src_autopet`
