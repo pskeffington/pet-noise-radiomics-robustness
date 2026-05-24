@@ -2,7 +2,7 @@
 
 Reproducible open-data study evaluating how PET image noise affects lesion segmentation, radiomics feature stability, and downstream biomedical model reliability in public PET/CT cancer imaging datasets.
 
-## Working aim
+## Working aim 
 
 This repository supports a nuclear-medicine and biomedical data-science project focused on low-count PET, simulated noise perturbation, radiomics robustness, and open cancer-imaging datasets.
 
