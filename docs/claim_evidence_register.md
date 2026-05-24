@@ -30,14 +30,24 @@ This register links future manuscript claims to verified evidence objects. It pr
 | `claim_003` | PyRadiomics can be used for standardized feature extraction. | `meth_pyradiomics`; future `config/pyradiomics_pet.yaml` | partially-verified | evidence-pending | Obtain direct publisher, PubMed, or DOI-registry confirmation before manuscript use. |
 | `claim_004` | IBSI guidance should inform feature naming and reproducibility reporting. | `meth_ibsi` | methods-planning-ready | planning-supported | Use in methods planning only until direct Radiology, DOI-registry, or PubMed metadata are captured. |
 | `claim_005` | Noise perturbation claims must distinguish synthetic perturbation from true scanner reconstruction. | `docs/noise_framework.md`; `meth_low_count_pet_noise` | not-created | evidence-pending | Draft noise framework before methods claims. |
-| `claim_006` | ICC and coefficient of variation can summarize radiomics stability across perturbation levels. | `meth_icc`; future `analysis/05_feature_stability_metrics.py` | doi-pending | evidence-pending | Verify statistical citations and implement metrics. |
-| `claim_007` | PET-specific repeatability evidence is needed before treating feature stability thresholds as defensible for this project. | `meth_pet_radiomics_robustness`; `lead_pet_robust_001` | doi-pending | evidence-pending | Verify Leijenaar et al. 2013 through DOI, publisher, and PubMed. |
+| `claim_006` | ICC and coefficient of variation can summarize radiomics stability across perturbation levels. | `meth_icc`; `meth_pet_radiomics_robustness`; future `analysis/05_feature_stability_metrics.py` | partially-supported | planning-supported | Leijenaar et al. supports ICC and COV for PET feature stability; still verify dedicated ICC/statistics citation before final statistical methods text. |
+| `claim_007` | PET-specific repeatability evidence is needed before treating feature stability thresholds as defensible for this project. | `meth_pet_radiomics_robustness`; `lead_pet_robust_001` | verified | supported | Use Leijenaar et al. 2013 for PET-specific robustness framing, with NSCLC and study-design limitations noted. |
 
 ## Planning-supported claim notes
 
 ### `claim_004`
 
 IBSI can support project-planning language on standardized radiomics nomenclature, benchmark data, benchmark values, and reproducibility reporting guidance. It does not by itself validate this project's PET/CT datasets, noise perturbation design, or PyRadiomics implementation.
+
+### `claim_006`
+
+Leijenaar et al. supports the use of ICC and COV in PET radiomics feature-stability analysis. A dedicated statistical citation for ICC and agreement/reliability methods remains needed before final statistical methods text.
+
+## Supported claim notes
+
+### `claim_007`
+
+Leijenaar et al. directly supports the need for PET-specific repeatability and inter-observer robustness evaluation. The source is specific to FDG-PET radiomics in NSCLC and should not be generalized to all tracers, cancers, segmentation strategies, or noise-perturbation models without qualification.
 
 ## Manuscript rule
 
