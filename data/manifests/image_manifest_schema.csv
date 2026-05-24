@@ -1,0 +1,22 @@
+column,description,required,source
+participant_id,Stable participant identifier from source manifest,yes,Participant ID
+accession,Dataset accession or source accession,yes,Accession
+study_name,Source study name,yes,Study Name
+ct_file_count,Number of CT DICOM archive records linked to participant,yes,Image Modality
+pt_file_count,Number of PET DICOM archive records linked to participant,yes,Image Modality
+seg_file_count,Number of segmentation DICOM archive records linked to participant,yes,Image Modality
+ct_file_ids,Pipe-delimited CT file identifiers,no,File ID
+pt_file_ids,Pipe-delimited PET file identifiers,no,File ID
+seg_file_ids,Pipe-delimited SEG file identifiers,no,File ID
+ct_file_names,Pipe-delimited CT file names,no,File Name
+pt_file_names,Pipe-delimited PET file names,no,File Name
+seg_file_names,Pipe-delimited SEG file names,no,File Name
+total_file_count,Total source manifest rows linked to participant,yes,derived
+has_ct,Whether participant has one or more CT records,yes,derived
+has_pt,Whether participant has one or more PET records,yes,derived
+has_seg,Whether participant has one or more SEG records,yes,derived
+has_complete_ct_pt_seg,Whether CT PET and SEG are all present,yes,derived
+total_size_bytes,Total listed file size in bytes,yes,File Size parsed
+ct_size_bytes,CT listed file size in bytes,yes,File Size parsed
+pt_size_bytes,PET listed file size in bytes,yes,File Size parsed
+seg_size_bytes,SEG listed file size in bytes,yes,File Size parsed
