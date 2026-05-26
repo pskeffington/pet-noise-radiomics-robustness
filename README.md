@@ -4,7 +4,7 @@ Reproducible open-data study evaluating how PET image noise affects lesion segme
 
 **Maintainer:** Paul Skeffington, MS, MPH  
 **Repository status:** active research scaffold; no analysis results should be treated as final until data acquisition, citation validation, and reproducibility checks are complete.  
-**Last documentation refresh:** 2026-05-25
+**Last documentation refresh:** 2026-05-26
 
 ## Working aim
 
@@ -13,6 +13,10 @@ This repository supports a nuclear-medicine and biomedical data-science project 
 ## Core research question
 
 How sensitive are PET/CT lesion radiomics features and segmentation-derived measures to simulated image noise, and which features remain stable enough for defensible downstream biomedical modeling?
+
+## Current update — 2026-05-26
+
+The repository remains pre-analysis and manuscript-preparation oriented. The current documentation priority is to verify dataset access terms, lock a manifest schema for imaging series and masks, and keep citation/access metadata complete before any derived feature tables or radiomics stability claims are introduced.
 
 ## Current scope
 
@@ -65,4 +69,4 @@ Raw imaging data should not be committed to this repository. Store data locally 
 
 ## Status
 
-Documentation refreshed for current scaffold use on 2026-05-25. The repository remains pre-analysis and manuscript-preparation oriented.
+Documentation refreshed for current scaffold use on 2026-05-26. The repository remains pre-analysis and manuscript-preparation oriented.
