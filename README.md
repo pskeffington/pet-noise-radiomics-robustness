@@ -2,7 +2,11 @@
 
 Reproducible open-data study evaluating how PET image noise affects lesion segmentation, radiomics feature stability, and downstream biomedical model reliability in public PET/CT cancer imaging datasets.
 
-## Working aim 
+**Maintainer:** Paul Skeffington, MS, MPH  
+**Repository status:** active research scaffold; no analysis results should be treated as final until data acquisition, citation validation, and reproducibility checks are complete.  
+**Last documentation refresh:** 2026-05-25
+
+## Working aim
 
 This repository supports a nuclear-medicine and biomedical data-science project focused on low-count PET, simulated noise perturbation, radiomics robustness, and open cancer-imaging datasets.
 
@@ -10,11 +14,11 @@ This repository supports a nuclear-medicine and biomedical data-science project 
 
 How sensitive are PET/CT lesion radiomics features and segmentation-derived measures to simulated image noise, and which features remain stable enough for defensible downstream biomedical modeling?
 
-## Stage 1 scope
+## Current scope
 
-Stage 1 establishes the manuscript and analysis scaffold. It does not claim completed analysis.
+Stage 1 establishes the manuscript and analysis scaffold. It does not claim completed analysis. The current repository purpose is to preserve a clean, reproducible object map before raw imaging, derived feature tables, or manuscript claims are introduced.
 
-Objects created in Stage 1:
+Current scaffold objects:
 
 - `docs/stage_1_scaffold.md`: stage plan and execution map.
 - `docs/data_sources.md`: open-data source registry.
@@ -45,6 +49,20 @@ Raw imaging data should not be committed to this repository. Store data locally 
 7. Reporting tables and figures.
 8. Manuscript drafting.
 
+## Documentation standards
+
+- Keep dataset access requirements, licenses, and citation metadata in `docs/data_sources.md` before analysis begins.
+- Keep DOI, dataset version, and retrieval-date checks in `docs/citation_registry.md`.
+- Separate raw imaging data, intermediate image volumes, and derived feature tables from source-controlled code unless a file is small, non-identifying, and necessary for reproducibility.
+- Record every analytic decision that affects feature stability, segmentation sensitivity, or model interpretation before manuscript drafting.
+
+## Next execution steps
+
+1. Verify candidate dataset availability and current access terms.
+2. Build a machine-readable manifest schema for imaging series, masks, metadata, and derived feature tables.
+3. Add a reproducible environment file once the initial Python/R imaging stack is selected.
+4. Convert `docs/analysis_plan.md` into modular scripts for acquisition, preprocessing, perturbation, extraction, and stability testing.
+
 ## Status
 
-Stage 1 scaffold initialized.
+Documentation refreshed for current scaffold use on 2026-05-25. The repository remains pre-analysis and manuscript-preparation oriented.
