@@ -1,0 +1,21 @@
+{
+  "schema_version": "portfolio-valuation-manifest/v1",
+  "repository": "pskeffington/pet-noise-radiomics-robustness",
+  "portfolio_valuator": "pskeffington/Portfolio",
+  "valuation_status": "aligned_internal_estimate",
+  "market_lane": "health data science / biomedical analytics",
+  "maturity_stage": "scaffold",
+  "evidence_grade": "B",
+  "product_surface": "manuscript_report_scaffold",
+  "integration_role": "biomedical imaging robustness and reproducible evaluation lane",
+  "public_safety_status": "clean",
+  "risk_level": "medium",
+  "current_value_range_usd": {"low": 50000, "high": 350000},
+  "forward_value_range_usd": {"low": 750000, "high": 4000000},
+  "collateral_treatment": "Apply dataset rights, reproducibility, validation, regulatory, adoption, transferability, and liquidation discounts.",
+  "evidence_paths": ["README.md", "portfolio_valuation_manifest.json"],
+  "next_value_unlocks": ["select public dataset", "complete perturbation protocol", "publish reproducible benchmark results"],
+  "missing_financial_inputs": ["revenue", "contracts", "licensing", "external validation", "independent appraisal"],
+  "claim_boundary": "Non-clinical research asset only; no diagnostic, safety, regulatory, clinical-performance, or institutional endorsement claim.",
+  "last_aligned_on": "2026-07-21"
+}
