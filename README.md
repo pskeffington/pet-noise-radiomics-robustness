@@ -1,5 +1,11 @@
 # PET Noise Radiomics Robustness
 
+## Portfolio evidence review — 2026-09-17
+
+**Reviewed carry-forward.** The dataset-validation log still records manual-source-check-required for the candidate imaging datasets. Repository documentation does not establish current access rights, annotation readiness, an executed perturbation/radiomics pipeline, or a reviewed robustness result packet.
+
+Maturity and valuation ranges are unchanged. [Current review and next evidence gates](docs/valuation/2026-09-17_review.md). Dates and result claims elsewhere retain their original scope.
+
 Reproducible open-data study evaluating how PET image noise affects lesion segmentation, radiomics feature stability, and downstream biomedical model reliability in public PET/CT cancer imaging datasets.
 
 **Maintainer:** Paul Skeffington, MS, MPH  
